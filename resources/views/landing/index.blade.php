@@ -50,6 +50,8 @@
 
     @include('partials.daftar_berita')
     
+    @include('partials.pengurus')
+
     @include('partials.galeri')
     
     @include('partials.footer')

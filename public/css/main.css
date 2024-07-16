@@ -760,6 +760,76 @@ td, th {
   background: #f9fafc;
 }
 
+.partner-logo {
+  width: 30px; /* Ukuran logo */
+  margin-right: 10px; /* Jarak antar logo */
+}
+.team-area {
+  padding: 60px 0;
+}
+.single-team-member {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.single-team-member .thumb {
+  overflow: hidden;
+  border-radius: 10px;
+}
+.single-team-member .thumb img {
+  width: 100%;
+  transition: all 0.3s ease;
+}
+.single-team-member:hover .thumb img {
+  transform: scale(1.1);
+}
+.single-team-member .details {
+  margin-top: 20px;
+}
+.single-team-member .details h4 {
+  margin-bottom: 5px;
+  font-size: 18px;
+  font-weight: 700;
+}
+.single-team-member .details p {
+  margin-bottom: 0;
+  color: #777;
+}
+
+.center-content {
+  text-align: center;
+}
+.center-content .about-title {
+  margin-bottom: 30px;
+}
+.team-area {
+  padding: 60px 0;
+}
+.single-team-member {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.single-team-member .thumb {
+  overflow: hidden;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+.single-team-member .thumb img {
+  width: 100%;
+  transition: all 0.3s ease;
+}
+.single-team-member:hover .thumb img {
+  transform: scale(1.1);
+}
+.single-team-member .details h4 {
+  margin-bottom: 5px;
+  font-size: 18px;
+  font-weight: 700;
+}
+.single-team-member .details p {
+  margin-bottom: 0;
+  color: #777;
+}
+
 @media (max-width: 767px) {
   .no-flex-xs {
     display: block !important;
@@ -2383,8 +2453,21 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #222;
 }
 
+.ana .primary-btn {
+  background-color: #222;
+  color: #fff;
+  border: 1px solid transparent;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
 
-
+.ana .primary-btn:hover {
+  border: 1px solid #222;
+  background-color: transparent;
+  color: #222;
+}
 
 .video-left h6 {
   text-transform: uppercase;
@@ -2628,7 +2711,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .footer-area {
-  padding-top: 100px;
+  padding-top: 40px;
+  padding-bottom: 30px;
   background-color: #04091e;
 }
 

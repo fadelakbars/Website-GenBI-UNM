@@ -26,3 +26,7 @@ Route::get('/detail-berita', function () {
     return view('landing.detail_berita');
 });
 
+Route::get('/daftar-pengurus', function () {
+    return view('landing.pengurus');
+});
+
