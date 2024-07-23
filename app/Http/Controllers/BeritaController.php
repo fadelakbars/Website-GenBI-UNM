@@ -28,6 +28,7 @@ class BeritaController extends Controller
             
             if ($latestNews) {
                 $latestNews['summary'] = Str::limit($latestNews['isi_berita'], 450);
+                $latestNews['gambar_url'] = url('storage/' . $latestNews['gambar']);
             }
 
 
