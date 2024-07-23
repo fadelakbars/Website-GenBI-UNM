@@ -5,11 +5,9 @@
         <img class="img-fluid" src="img/PENDIDIKAN.jpg" alt="" />
     </div>
     <div class="col-lg-6 no-padding home-about-right">
-        @foreach($data as $berita)
-            <h1>{{ $berita['judul'] }}</h1>
-            <p><span>{{ $berita['penulis'] }}<br>{{ $berita['tanggal_publikasi'] }}</span></p>
-            <p>{{ $berita['isi_berita'] }}</p>
-        @endforeach
+            <h1>{{ $data['judul'] }}</h1>
+            <p><span>{{ $data['penulis'] }}<br>{{ $data['tanggal_publikasi'] }}</span></p>
+            <p>{{ $data['isi_berita'] }}</p>
         <a class="text-uppercase primary-btn" href="{{ url('/berita-terbaru') }}">Selengkapnya</a>
     </div>
     </div>
