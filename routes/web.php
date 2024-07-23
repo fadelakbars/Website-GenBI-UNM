@@ -1,10 +1,12 @@
 <?php
 
+use App\Http\Controllers\BeritaController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('landing.index');
-});
+Route::get('/', [BeritaController::class, 'index']);
+// Route::get('/', function () {
+//     return view('landing.index');
+// });
 
 Route::get('/pengumuman', function () {
     return view('landing.pengumuman');
