@@ -1,7 +1,7 @@
 <section class="home-about-area">
 <div class="container-fluid">
     <div class="row justify-content-center align-items-center">
-    <div class="col-lg-6 no-padding home-about-left">
+    <div class="col-lg-5 no-padding home-about-left">
         <img class="img-fluid" src="{{ asset('storage/' . $data['gambar']) }}" alt="gambar berita" />
     </div>
     <div class="col-lg-6 no-padding home-about-right">

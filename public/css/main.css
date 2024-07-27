@@ -1945,7 +1945,7 @@ h1, h2, h3, h4, h5, h6 {
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
-#header {
+/* #header {
   padding: 14px 0;
   position: fixed;
   left: 0;
@@ -1957,6 +1957,22 @@ h1, h2, h3, h4, h5, h6 {
 
 #header.header-scrolled {
   background: #04091ee6;
+  transition: all 0.5s;
+} */
+
+#header {
+  padding: 14px 0;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  transition: all 0.5s;
+  z-index: 997;
+  background: linear-gradient(45deg, #141059, #4952ca );
+}
+
+#header.header-scrolled {
+  /* background: linear-gradient(45deg, #141059, #4952ca ); */
   transition: all 0.5s;
 }
 
@@ -2344,8 +2360,9 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .banner-area {
-  background: url(../img/header-bg.png) center;
   background-size: cover;
+  background-position: center;
+  transition: background-image 1s ease-in-out;
 }
 
 @media (max-width: 1199.98px) {
@@ -2713,7 +2730,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 .footer-area {
   padding-top: 40px;
   padding-bottom: 30px;
-  background-color: #04091e;
+  /* background-color: #04091e; */
+  background: linear-gradient(45deg, #141059, #4952ca );
 }
 
 h6 {

@@ -1,3 +1,25 @@
+document.addEventListener('DOMContentLoaded', function() {
+  let backgroundImages = JSON.parse(document.getElementById('backgroundImages').textContent);
+  let bannerArea = document.querySelector('.banner-area');
+  let currentIndex = 0;
+
+  function changeBackground() {
+      if (currentIndex >= backgroundImages.length) {
+          currentIndex = 0;
+      }
+      bannerArea.style.backgroundImage = `url('${backgroundImages[currentIndex]}')`;
+      currentIndex++;
+  }
+
+  // Ganti background setiap 5 detik
+  setInterval(changeBackground, 5000);
+
+  // Set background pertama kali
+  changeBackground();
+});
+
+
+// Deputi ======================================================================================================================================================
 $(document).ready(function(){
   $(".deputi-carousel").owlCarousel({
       // items: 4,
