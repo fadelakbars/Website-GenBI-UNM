@@ -17,8 +17,20 @@ class HomeController extends Controller
         // API URLs
         $beritaApiUrl = "http://127.0.0.1:8000/api/api/berita";
         $backgroundApiUrl = "http://127.0.0.1:8000/api/listbackground";
+        $tentangUrl = "http://127.0.0.1:8000/api/gettentang";
+        $eventUrl = "http://127.0.0.1:8000/api/getevent";
 
         try {
+            // Mengakses API Tentang GenBI
+            $tentangResponse = $client->get($tentangUrl);
+            $tentangResponseData = json_decode($tentangResponse->getBody(), true);
+            $tentangData = $tentangResponseData['data'][0]['tentang_genbi'] ?? null;
+
+            // Batasi panjang data tentang GenBI menjadi 400 karakter
+            if ($tentangData) {
+                $tentangData = Str::limit(strip_tags($tentangData), 400);
+            }
+
             // Mengakses API Berita
             $beritaResponse = $client->get($beritaApiUrl);
             $beritaResponseData = json_decode($beritaResponse->getBody(), true);
@@ -42,9 +54,16 @@ class HomeController extends Controller
                 return url('storage/' . $item['background']);
             }, $backgroundResponseData['data']);
 
+            // Mengakses API Event
+            $eventResponse = $client->get($eventUrl);
+            $eventResponseData = json_decode($eventResponse->getBody(), true);
+            $events = $eventResponseData['data'];
+
             return view('landing.index', [
                 'data' => $latestNews,
                 'backgroundImages' => $backgroundImages,
+                'tentangGenBI' => $tentangData,
+                'events' => $events,
             ]);
         } catch (\Exception $e) {
             return view('landing.index', ['error' => $e->getMessage()]);

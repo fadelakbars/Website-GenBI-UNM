@@ -2645,7 +2645,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .single-unique-product img {
-  padding: 40px 0px;
+  padding: 30px 10px;
 }
 
 .single-unique-product h6 {
@@ -2946,3 +2946,66 @@ h6 {
 .switch-wrap p {
   margin: 0;
 }
+
+/* event section */
+
+.home-event-area {
+  padding: 50px 0;
+}
+
+.home-event-card {
+  margin-bottom: 30px;
+}
+
+.event-info {
+  padding: 20px;
+}
+
+.event-info h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.event-info p {
+  margin: 5px 0;
+}
+
+.event-description {
+  margin-bottom: 10px;
+}
+
+.status {
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+.status.coming-soon {
+  background: #ff9800;
+  color: #fff;
+}
+
+.status.ongoing {
+  background: #4caf50;
+  color: #fff;
+}
+
+.status.completed {
+  background: #2196f3;
+  color: #fff;
+}
+
+.status.cancelled {
+  background: #f44336;
+  color: #fff;
+}
+
+/* .text-uppercase.primary-btn {
+  background: #007bff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 10px;
+} */

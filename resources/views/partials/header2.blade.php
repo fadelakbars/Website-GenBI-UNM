@@ -15,7 +15,6 @@
                 <a href="">Lainnya</a>
                 <ul>
                 <li><a href="{{ url('/daftar-pengurus') }}">Pengurus</a></li>
-                <li><a href="elements.html">Mahasiswa Berprestasi</a></li>
                 <li><a href="elements.html">Alumni</a></li>
                 </ul>
             </li>
