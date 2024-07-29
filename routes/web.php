@@ -14,14 +14,17 @@ Route::get('/pengumuman', [PengumumanController::class, 'lihat_pengumuman']);
 
 Route::get('/tentang', [TentangController::class, 'detail_tentang']);
 
+Route::get('/detail-berita/{id}', [BeritaController::class, 'showDetailBerita'])->name('detail-berita');
 
-Route::get('/daftar-berita', function () {
-    return view('landing.daftar_berita');
-});
+Route::get('/daftar-berita', [BeritaController::class, 'daftarBerita'])->name('daftar-berita');
 
-Route::get('/detail-berita', function () {
-    return view('landing.detail_berita');
-});
+// Route::get('/daftar-berita', function () {
+//     return view('landing.daftar_berita');
+// });
+
+// Route::get('/detail-berita', function () {
+//     return view('landing.detail_berita');
+// });
 
 Route::get('/daftar-pengurus', function () {
     return view('landing.pengurus');

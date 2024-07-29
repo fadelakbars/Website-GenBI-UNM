@@ -41,10 +41,5 @@
                 </div>
             </div>
         </div>
-        {{-- <div class="row d-flex justify-content-center">
-            <div class="col-md-8 header-text">
-                <a class="primary-btn" href="{{ url('/daftar-berita') }}">Lihat Galeri Lainnya</a>
-            </div>
-        </div> --}}
-    </div>
+        </div>
 </section>

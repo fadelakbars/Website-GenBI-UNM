@@ -25,8 +25,8 @@
     <link rel="stylesheet" href="css/magnific-popup.css">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/main.css">
+    
     <style>
-        /* Custom CSS for centering content */
         .center-content {
             text-align: center;
         }
@@ -36,15 +36,14 @@
     </style>
 </head>
 <body>
-
+    
     @include('partials.header2')
-
+    
     <section class="about-generic-area section-gap">
         <div class="container border-top-generic">
             <div class="row">
                 <div class="col-md-12 center-content mb-30">
                     <h1 class="text-black">Tentang GenBI Universitas Negeri Makassar.</h1>
-                    {{-- <p class="text-black mb-30">Oleh: Admin <br> 16 Juli 2024</p> --}}
                 </div>
             </div>
             <div class="row justify-content-center">
@@ -56,22 +55,12 @@
                 <div class="col-lg-8 mt-4">
                     {!! $data['tentang_genbi'] !!}
                 </div>
-                {{-- <div class="col-lg-8">
-                    <p>Recently, the US Federal government banned online casinos from operating in America by making it illegal to transfer money to them through any US bank or payment system. As a result of this law, most of the popular online casino networks such as Party Gaming and PlayTech left the United States. Overnight, online casino players found themselves being chased by the Federal government. But, after a fortnight, the online casino industry came up with a solution and new online casinos started taking root. These began to operate under a different business umbrella, and by doing that, rendered the transfer of money to and from them legal. A major part of this was enlisting electronic banking systems that would accept this new clarification and start doing business with me. Listed in this article are the electronic banking systems that accept players from the United States that wish to play in online casinos.</p>
-                </div>
-                <div class="col-md-8">
-                    <div class="img-text">
-                        <img src="img/a2.jpg" alt="" class="img-fluid float-left mr-20 mb-20">
-                        <p>Recently, the US Federal government banned online casinos from operating in America by making it illegal to transfer money to them through any US bank or payment system. As a result of this law, most of the popular online casino networks such as Party Gaming and PlayTech left the United States. Overnight, online casino players found themselves being chased by the Federal government. But, after a fortnight, the online casino industry came up with a solution and new online casinos started taking root. These began to operate under a different business umbrella, and by doing that, rendered the transfer of money to and from them legal. A major part of this was enlisting electronic banking systems that would accept this new clarification and start doing business with me. Listed in this article are the electronic banking systems that accept players from the United States that wish to play in online casinos.</p>
-                    </div>
-                </div> --}}
             </div>
         </div>
     </section>
-    <!-- End Generic Area -->  
-
+    
     @include('partials.footer2')
-
+    
     <!-- Scripts -->
     <script src="js/vendor/jquery-2.2.4.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>

@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="css/magnific-popup.css">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/main.css">
+    
     <style>
         /* Custom CSS for centering content */
         .center-content {
@@ -33,13 +34,13 @@
         .center-content .about-title {
             margin-bottom: 30px;
         }
-    </style>
+        </style>
 </head>
 <body>
-
+    
     @include('partials.header2')
     
-
+    
     <!-- Start Generic Area -->
     <section class="about-generic-area section-gap">
         <div class="container border-top-generic">
@@ -65,7 +66,7 @@
     
     @include('partials.footer2')
     
-
+    
     <!-- Scripts -->
     <script src="js/vendor/jquery-2.2.4.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>

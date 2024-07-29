@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="css/magnific-popup.css">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/main.css">
+
     <style>
         .center-content {
             text-align: center;
@@ -75,5 +76,6 @@
     <script src="js/parallax.min.js"></script>  
     <script src="js/mail-script.js"></script>               
     <script src="js/main.js"></script>   
+
 </body>
 </html>

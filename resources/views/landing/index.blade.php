@@ -20,6 +20,7 @@
     <title>Watch</title>
 
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <!-- CSS ============================================= -->
     <link rel="shortcut icon" href="{{ asset('img/fav.png') }}" />
     <link rel="stylesheet" href="{{ asset('css/linearicons.css') }}" />
@@ -30,7 +31,7 @@
     <link rel="stylesheet" href="{{ asset('css/animate.min.css') }}" />
     <link rel="stylesheet" href="{{ asset('css/owl.carousel.css') }}" />
     <link rel="stylesheet" href="{{ asset('css/main.css') }}" />
-      
+    
   </head>
   <body>
 
@@ -42,7 +43,7 @@
     
     @include('partials.berita_terbaru')
     
-    {{-- @include('partials.event') --}}
+    @include('partials.event')
 
       
     @include('partials.daftar_berita')

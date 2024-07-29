@@ -27,26 +27,98 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    
     <style>
         /* Custom CSS for centering content */
 
-    </style>
+        </style>
 </head>
 <body>
-
+    
     @include('partials.header2')
-
-
-<section class="team-area section-gap" id="semua-pengurus">
-    <div class="container">
-        <div class="row d-flex justify-content-center">
-            <div class="col-md-8 pb-40 header-text text-center">
-                <h1>Daftar Pengurus GenBI</h1>
-                <p>Berikut adalah daftar lengkap pengurus GenBI UNM, termasuk pengurus inti, deputi, dan staf deputi kami.</p>
+    
+    
+    <section class="team-area section-gap" id="semua-pengurus">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-8 pb-40 header-text text-center">
+                    <h1>Daftar Pengurus GenBI</h1>
+                    <p>Berikut adalah daftar lengkap pengurus GenBI UNM, termasuk pengurus inti, deputi, dan staf deputi kami.</p>
+                </div>
+            </div>
+            
+            <!-- Pengurus Inti -->
+            <div class="row">
+                <div class="col-12 text-center mb-4">
+                    <h2>Presidium</h2>
+                </div>
+                <div class="owl-carousel deputi-carousel">
+                    <!-- Koordinator -->
+                    <div class="single-team-member text-center">
+                        <div class="thumb">
+                            <img src="{{ asset('img/superman-50.png') }}" alt="Koordinator Kewirausahaan" class="img-fluid">
+                        </div>
+                        <div class="details">
+                            <h4>Nama Koordinator</h4>
+                            <p>Koordinator</p>
+                            <p>Program Studi</p>
+                        </div>
+                    </div>
+                    <!-- Anggota lainnya -->
+                    <div class="single-team-member text-center">
+                        <div class="thumb">
+                            <img src="{{ asset('img/superman-50.png') }}" alt="Anggota Kewirausahaan" class="img-fluid">
+                        </div>
+                        <div class="details">
+                            <h4>Nama Anggota 1</h4>
+                            <p>Anggota</p>
+                            <p>Program Studi</p>
+                        </div>
+                    </div>
+                    <div class="single-team-member text-center">
+                        <div class="thumb">
+                        <img src="{{ asset('img/superman-50.png') }}" alt="Anggota Kewirausahaan" class="img-fluid">
+                    </div>
+                    <div class="details">
+                        <h4>Nama Anggota 1</h4>
+                        <p>Anggota</p>
+                        <p>Program Studi</p>
+                    </div>
+                </div>
+                <div class="single-team-member text-center">
+                    <div class="thumb">
+                        <img src="{{ asset('img/superman-50.png') }}" alt="Anggota Kewirausahaan" class="img-fluid">
+                    </div>
+                    <div class="details">
+                        <h4>Nama Anggota 1</h4>
+                        <p>Anggota</p>
+                        <p>Program Studi</p>
+                    </div>
+                </div>
+                <div class="single-team-member text-center">
+                    <div class="thumb">
+                        <img src="{{ asset('img/superman-50.png') }}" alt="Anggota Kewirausahaan" class="img-fluid">
+                    </div>
+                    <div class="details">
+                        <h4>Nama Anggota 1</h4>
+                        <p>Anggota</p>
+                        <p>Program Studi</p>
+                    </div>
+                </div>
+                <div class="single-team-member text-center">
+                    <div class="thumb">
+                        <img src="{{ asset('img/superman-50.png') }}" alt="Anggota Kewirausahaan" class="img-fluid">
+                    </div>
+                    <div class="details">
+                        <h4>Nama Anggota 2</h4>
+                        <p>Anggota</p>
+                        <p>Program Studi</p>
+                    </div>
+                </div>
+                <!-- Tambahkan lebih banyak anggota sesuai kebutuhan -->
             </div>
         </div>
-
-        <!-- Pengurus Inti -->
+        
         <div class="row">
             <div class="col-12 text-center mb-4">
                 <h2>Presidium</h2>
@@ -117,7 +189,7 @@
                 <!-- Tambahkan lebih banyak anggota sesuai kebutuhan -->
             </div>
         </div>
-
+        
         <div class="row">
             <div class="col-12 text-center mb-4">
                 <h2>Presidium</h2>
@@ -188,7 +260,7 @@
                 <!-- Tambahkan lebih banyak anggota sesuai kebutuhan -->
             </div>
         </div>
-
+        
         <div class="row">
             <div class="col-12 text-center mb-4">
                 <h2>Presidium</h2>
@@ -259,78 +331,7 @@
                 <!-- Tambahkan lebih banyak anggota sesuai kebutuhan -->
             </div>
         </div>
-
-        <div class="row">
-            <div class="col-12 text-center mb-4">
-                <h2>Presidium</h2>
-            </div>
-            <div class="owl-carousel deputi-carousel">
-                <!-- Koordinator -->
-                <div class="single-team-member text-center">
-                    <div class="thumb">
-                        <img src="{{ asset('img/superman-50.png') }}" alt="Koordinator Kewirausahaan" class="img-fluid">
-                    </div>
-                    <div class="details">
-                        <h4>Nama Koordinator</h4>
-                        <p>Koordinator</p>
-                        <p>Program Studi</p>
-                    </div>
-                </div>
-                <!-- Anggota lainnya -->
-                <div class="single-team-member text-center">
-                    <div class="thumb">
-                        <img src="{{ asset('img/superman-50.png') }}" alt="Anggota Kewirausahaan" class="img-fluid">
-                    </div>
-                    <div class="details">
-                        <h4>Nama Anggota 1</h4>
-                        <p>Anggota</p>
-                        <p>Program Studi</p>
-                    </div>
-                </div>
-                <div class="single-team-member text-center">
-                    <div class="thumb">
-                        <img src="{{ asset('img/superman-50.png') }}" alt="Anggota Kewirausahaan" class="img-fluid">
-                    </div>
-                    <div class="details">
-                        <h4>Nama Anggota 1</h4>
-                        <p>Anggota</p>
-                        <p>Program Studi</p>
-                    </div>
-                </div>
-                <div class="single-team-member text-center">
-                    <div class="thumb">
-                        <img src="{{ asset('img/superman-50.png') }}" alt="Anggota Kewirausahaan" class="img-fluid">
-                    </div>
-                    <div class="details">
-                        <h4>Nama Anggota 1</h4>
-                        <p>Anggota</p>
-                        <p>Program Studi</p>
-                    </div>
-                </div>
-                <div class="single-team-member text-center">
-                    <div class="thumb">
-                        <img src="{{ asset('img/superman-50.png') }}" alt="Anggota Kewirausahaan" class="img-fluid">
-                    </div>
-                    <div class="details">
-                        <h4>Nama Anggota 1</h4>
-                        <p>Anggota</p>
-                        <p>Program Studi</p>
-                    </div>
-                </div>
-                <div class="single-team-member text-center">
-                    <div class="thumb">
-                        <img src="{{ asset('img/superman-50.png') }}" alt="Anggota Kewirausahaan" class="img-fluid">
-                    </div>
-                    <div class="details">
-                        <h4>Nama Anggota 2</h4>
-                        <p>Anggota</p>
-                        <p>Program Studi</p>
-                    </div>
-                </div>
-                <!-- Tambahkan lebih banyak anggota sesuai kebutuhan -->
-            </div>
-        </div>
-
+        
     </div>
 </section>
 
@@ -338,29 +339,6 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-<script>
-    // $(document).ready(function(){
-    //     $(".deputi-carousel").owlCarousel({
-    //         items: 4,
-    //         margin: 20,
-    //         loop: true,
-    //         autoplay: true,
-    //         autoplayTimeout: 3000,
-    //         autoplayHoverPause: true,
-    //         responsive: {
-    //             0: {
-    //                 items: 1
-    //             },
-    //             600: {
-    //                 items: 2
-    //             },
-    //             1000: {
-    //                 items: 3
-    //             }
-    //         }
-    //     });
-    // });
-</script>
 <script src="js/vendor/jquery-2.2.4.min.js"></script>
 <script src="js/popper.min.js"></script>
 <script src="js/vendor/bootstrap.min.js"></script>         

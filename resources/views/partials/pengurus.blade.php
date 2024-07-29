@@ -7,10 +7,10 @@
             </div>
         </div>
         <div class="row d-flex justify-content-center">
-            <div class="col-lg-4 col-md-6 d-flex justify-content-center">
+            <div class="col-lg-3 col-md-4 d-flex justify-content-center">
                 <div class="single-team-member text-center">
                     <div class="thumb">
-                        <img src="{{ asset('img/superman-50.png') }}" alt="Ketua" class="img-fluid">
+                        <img src="{{ asset('img/Snapinsta.app_440653712_1218298206253918_4465747633932531620_n_1080.jpg') }}" alt="Ketua" class="img-fluid">
                     </div>
                     <div class="details">
                         <h4>Nama Ketua</h4>
@@ -18,10 +18,10 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6 d-flex justify-content-center">
+            <div class="col-lg-3 col-md-4 d-flex justify-content-center">
                 <div class="single-team-member text-center">
                     <div class="thumb">
-                        <img src="{{ asset('img/entrepreneur-58.png') }}" alt="Sekretaris" class="img-fluid">
+                        <img src="{{ asset('img/Snapinsta.app_440653712_1218298206253918_4465747633932531620_n_1080.jpg') }}" alt="Sekretaris" class="img-fluid">
                     </div>
                     <div class="details">
                         <h4>Nama Sekretaris</h4>
@@ -29,10 +29,10 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6 d-flex justify-content-center">
+            <div class="col-lg-3 col-md-4 d-flex justify-content-center">
                 <div class="single-team-member text-center">
                     <div class="thumb">
-                        <img src="{{ asset('img/eating-ice-cream-1-15.png') }}" alt="Bendahara" class="img-fluid">
+                        <img src="{{ asset('img/Snapinsta.app_440653712_1218298206253918_4465747633932531620_n_1080.jpg') }}" alt="Bendahara" class="img-fluid">
                     </div>
                     <div class="details">
                         <h4>Nama Bendahara</h4>
