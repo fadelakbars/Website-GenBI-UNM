@@ -43,7 +43,7 @@
         </div>
         <div class="row d-flex justify-content-center">
             <div class="col-md-8 text-center anu">
-                <a class="primary-btn" href="{{ url('/daftar-pengurus') }}">Daftar Pengurus</a>
+                <a class="primary-btn" href="{{ url('/pengurus') }}">Daftar Pengurus</a>
             </div>
         </div>
     </div>
