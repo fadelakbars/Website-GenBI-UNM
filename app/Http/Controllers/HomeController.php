@@ -1,5 +1,4 @@
 <?php
-
 namespace App\Http\Controllers;
 
 use GuzzleHttp\Client;
@@ -16,6 +15,7 @@ class HomeController extends Controller
         $backgroundApiUrl = "http://127.0.0.1:8000/api/listbackground";
         $tentangUrl = "http://127.0.0.1:8000/api/gettentang";
         $eventUrl = "http://127.0.0.1:8000/api/getevent";
+        $galeriUrl = "http://127.0.0.1:8000/api/getgaleri";
 
         try {
             // Mengakses API Tentang GenBI
@@ -69,15 +69,27 @@ class HomeController extends Controller
             // Batasi jumlah event yang ditampilkan menjadi dua
             $limitedEvents = array_slice($events, 0, 2);
 
+            // Mengakses API Galeri
+            $galeriResponse = $client->get($galeriUrl);
+            $galeriResponseData = json_decode($galeriResponse->getBody(), true);
+            $galeriData = array_map(function($item) {
+                return [
+                    'foto' => url('storage/' . $item['foto']),
+                    'deskripsi' => $item['deskripsi']
+                ];
+            }, $galeriResponseData['data']);
+
             return view('landing.index', [
                 'latestNews' => $latestNews,
                 'threeLatestNews' => $threeLatestNews,
                 'backgroundImages' => $backgroundImages,
                 'tentangGenBI' => $tentangData,
                 'events' => $limitedEvents,
+                'galeriData' => $galeriData,
             ]);
         } catch (\Exception $e) {
             return view('landing.index', ['error' => $e->getMessage()]);
         }
     }
 }
+

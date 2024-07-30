@@ -2,10 +2,7 @@
 <html lang="zxx" class="no-js">
   <head>
     <!-- Mobile Specific Meta -->
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <!-- Favicon-->
     <link rel="shortcut icon" href="img/fav.png" />
     <!-- Author Meta -->
@@ -44,14 +41,13 @@
     @include('partials.berita_terbaru')
     
     @include('partials.event')
-
-      
+    
     @include('partials.daftar_berita')
     
     @include('partials.pengurus')
 
     @include('partials.galeri')
-    
+
     @include('partials.footer')
 
     <script src="{{ asset('js/vendor/jquery-2.2.4.min.js') }}"></script>
@@ -70,6 +66,14 @@
     <script src="{{ asset('js/mail-script.js') }}"></script>
     <script id="backgroundImages" type="application/json">@json($backgroundImages)</script>
     <script src="{{ asset('js/main.js') }}"></script>
+
+    <script>
+      $(document).ready(function(){
+        $('#photoCarousel').carousel({
+          interval: 2000 // 2 detik
+        });
+      });
+    </script>
 
   </body>
 </html>

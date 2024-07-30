@@ -6,40 +6,36 @@
                 <p>Dokumentasi kegiatan dan momen-momen GenBI UNM</p>
             </div>
         </div>
-        <div class="row">
-            <div class="col-lg-4 col-md-6">
-                <a href="{{ url('/detail-berita') }}" style="text-decoration: none; color: inherit;">
-                    <div class="single-service">
-                        <div class="service-image">
-                            <img src="{{ asset('img/IMG_0217.jpg') }}" alt="GENBI TAKE ACTION ZERO WASTE ACTION" class="img-fluid">
-                            <div class="service-text">
-                                <p class="image-caption">GENBI TAKE ACTION ZERO WASTE ACTION</p>
+        <div class="row d-flex justify-content-center">
+            <div class="col-md-12">
+                <div id="carouselExample" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        @foreach($galeriData as $index => $galeri)
+                            <li data-target="#carouselExample" data-slide-to="{{ $index }}" class="{{ $index == 0 ? 'active' : '' }}"></li>
+                        @endforeach
+                    </ol>
+                    <div class="carousel-inner">
+                        @foreach($galeriData as $index => $galeri)
+                            <div class="carousel-item {{ $index == 0 ? 'active' : '' }}">
+                                <a href="{{ url('/galeri') }}">
+                                    <img src="{{ asset($galeri['foto']) }}" class="d-block w-100" alt="{{ $galeri['deskripsi'] }}">
+                                </a>
+                                <div class="carousel-caption-custom">
+                                    <p>{{ $galeri['deskripsi'] }}</p>
+                                </div>
                             </div>
-                        </div>
+                        @endforeach
                     </div>
-                </a>
-            </div>
-
-            <div class="col-lg-4 col-md-6">
-                <div class="single-service">
-                    <div class="service-image">
-                        <img src="{{ asset('img/PENDIDIKAN.jpg') }}" alt="REPORT KEGIATAN CAPACITY BUILDING & LEADERSHIP PRACTICE" class="img-fluid">
-                        <div class="service-text">
-                            <p class="image-caption">REPORT KEGIATAN CAPACITY BUILDING & LEADERSHIP PRACTICE</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="single-service">
-                    <div class="service-image">
-                        <img src="{{ asset('img/DSCF8289_1.jpg') }}" alt="REPORT KEGIATAN GENBI MENGAJAR 2023" class="img-fluid">
-                        <div class="service-text">
-                            <p class="image-caption">REPORT KEGIATAN GENBI MENGAJAR 2023</p>
-                        </div>
-                    </div>
+                    <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExample" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
                 </div>
             </div>
         </div>
-        </div>
+    </div>
 </section>
